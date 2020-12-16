@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif; 
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-image: url(scene6.jpg);
+  background-size: cover;
+    at 50% 100%,
+    rgb(255 22 54 / 75%),
+    rgb(29 1 1)
+  );
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto;
+  line-height: 28px;
+  max-width: 1024px;
+}
+
+h1  span {
+    font-weight: 300;
+    font-size: 16px;
+    color: springgreen;
+  }
+
+p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+p span {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.add-a-quote {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  color: #1c0272;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  transition: background-color 300ms ease;
+}
+
+.add-a-quote:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  padding: 30px;
+  border-radius: 20px;
+  transform: rotate(-5deg);
+}
+
+.aligner {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.quote {
+  position: relative;
+  margin: 250px auto 0;
+  padding: 0 20px;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+  max-width: 1024px;
+  line-height: 40px;
+}
+
+.quote > div {
+  font-size: 50px;
+  margin-bottom: 30px;
+  //text-transform: uppercase;
+  //letter-spacing: 1px;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+.new-quote {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding: 6px 12px;
+  font-size: 11px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background-color 300ms ease, border-color 300ms ease;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+}
+
+.image-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  padding: 100px 20px 0;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.image-wrapper.shake {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
