@@ -8,13 +8,35 @@ html {
   padding: 0;
   margin: 0;
   color: #fff;
-  background-image: url(scene6.jpg);
   background-size: cover;
-    at 50% 100%,
-    rgb(255 22 54 / 75%),
-    rgb(29 1 1)
-  );
+  height: 100vh;
+  overflow: scroll;
 }
+
+.background-2 {
+  background-image: url(scene2.jpg);
+}
+
+.background-3 {
+  background-image: url(scene3.jpg);
+}
+
+.background-4 {
+  background-image: url(scene4.jpg);
+}
+
+.background-5 {
+  background-image: url(scene5.jpg);
+}
+
+.background-6 {
+  background-image: url(scene7.jpg);
+}
+
+.background-7 {
+  background-image: url(scene8.jpg);
+}
+
 
 h1 {
   font-size: 18px;
